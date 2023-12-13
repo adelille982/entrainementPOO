@@ -1,11 +1,11 @@
 <?php
 class Bicycle
 {
-    private int $taillePneu = 29;
-    private int $tailleCadre = 17;
-    public string $couleurCadre = 'bleu';
-    public int $prix = 1900;
-    public int $prixOriginal;
+    private int $tireSize = 29;
+    private int $frameSize = 17;
+    public string $colorFrame = 'bleu';
+    public int $price = 1900;
+    public int $priceOriginal;
     public string $color;
     public int $currentSpeed;
     public int $nbSeats = 1;
@@ -13,29 +13,29 @@ class Bicycle
 
     public function __construct()
     {
-        $this->prixOriginal = $this->prix;
+        $this->priceOriginal = $this->price;
         $this->currentSpeed = 0;
     }
 
 
-    public function getAfficherTaillePneu(): int
+    public function getTireSize(): int
     {
-        return $this->taillePneu;
+        return $this->tireSize;
     }
 
-    public function getAfficherTailleCadre(): int
+    public function getframeSize(): int
     {
-        return $this->tailleCadre;
+        return $this->frameSize;
     }
 
-    public function Promotion20pourcent()
+    public function apply20PercentDiscount()
     {
-        $this->prix *= 0.8;
+        $this->price *= 0.8;
     }
 
-    public function Promotion50pourcent()
+    public function apply50PercentDiscount()
     {
-        $this->prix *= 0.5;
+        $this->price *= 0.5;
     }
 
     public function forward(): string
@@ -61,15 +61,13 @@ class Bicycle
     }
 }
 
-$Head = new Bicycle;
-$Lapierre = new Bicycle;
-$Trek = new Bicycle;
-$Focus = new Bicycle;
-$Ridley = new Bicycle;
+$head = new Bicycle;
+$lapierre = new Bicycle;
+$trek = new Bicycle;
 $rockrider = new Bicycle();
 $rockrider->color = 'yellow';
 $tornado = new Bicycle();
 $tornado->color = 'black';
 
-$Lapierre->Promotion20pourcent();
-$Head->Promotion50pourcent();
+$lapierre->apply20PercentDiscount();
+$head->apply50PercentDiscount();
