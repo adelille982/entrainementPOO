@@ -20,13 +20,13 @@ include_once "Bicycle.php"
 
 <br>
 
-<?php /* J'en revient pas de découvir que l'on pouvait stylisé nos var dump ^^ c'est trop cool lol */?>
+<?php /* J'en revient pas de découvir que l'on pouvait stylisé nos var dump ^^ c'est trop cool lol */ ?>
 <div style="text-align: center;">
-<?php var_dump($Lapierre->prixOriginal);?>
-<?php var_dump($Lapierre->getAfficherTaillePneu());?>
-<?php var_dump($Head->getAfficherTaillePneu());?>
-<?php var_dump($Head->prix);?>
-<?php var_dump($Head->getAfficherTailleCadre());?>
+    <?php var_dump($Lapierre->prixOriginal); ?>
+    <?php var_dump($Lapierre->getAfficherTaillePneu()); ?>
+    <?php var_dump($Head->getAfficherTaillePneu()); ?>
+    <?php var_dump($Head->prix); ?>
+    <?php var_dump($Head->getAfficherTailleCadre()); ?>
 </div>
 
 <br>
@@ -42,6 +42,6 @@ include_once "Bicycle.php"
 <br>
 
 <div style="text-align: center;">
-    <?php var_dump($Trek);?>
-    <?php $Trek->dump();?>
+    <?php var_dump($Trek); ?>
+    <?php $Trek->dump(); ?>
 </div>

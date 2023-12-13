@@ -17,7 +17,7 @@ class Bicycle
         $this->currentSpeed = 0;
     }
 
-    
+
     public function getAfficherTaillePneu(): int
     {
         return $this->taillePneu;
@@ -66,11 +66,8 @@ $Lapierre = new Bicycle;
 $Trek = new Bicycle;
 $Focus = new Bicycle;
 $Ridley = new Bicycle;
-// Instanciation d'un nouvel objet $rockrider
 $rockrider = new Bicycle();
 $rockrider->color = 'yellow';
-
-// Instanciation d'un nouvel objet $tornado
 $tornado = new Bicycle();
 $tornado->color = 'black';
 
